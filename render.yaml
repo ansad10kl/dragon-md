@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dragon-md
+    env: node
+    plan: free
+    buildCommand: yarn install
+    startCommand: node main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
